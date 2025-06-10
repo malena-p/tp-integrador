@@ -118,4 +118,9 @@ img {border-left-color: yellow;}
 header {border: 2px solid black;} /*en vez de poner todos los bordes por separado, se puede poner todo junto.*/
 /*border-radius: redondea las esquinas del borde. Valores posibles: px, em, rem, %, etc.*/
 
-form {width: 100px;height:200px;border:purple;margin:auto;background-color:aquamarine}
+form {border:purple;margin:auto;background-color:aquamarine}
+textarea {border: 2px solid black; border-radius: 5px; padding: 10px; width: 100%; height: 100px; background-color: rgb(223, 87, 87);}
+
+
+
+
