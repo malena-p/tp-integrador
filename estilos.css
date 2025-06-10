@@ -1,4 +1,4 @@
-/*  esto es así: para conectar esta cosa al resto de interfaces y que estas se vean afectadas por los cambios que se realicen acá, hay que vincularlas con ese link q ya viste. entoncas, la estructura para agregar cambios es la siguiente: 
+/*  esto es así: para conectar esto al resto de interfaces y que estas se vean afectadas por los cambios que se realicen acá, hay que vincularlas con ese link q ya viste. entoncas, la estructura para agregar cambios es la siguiente: 
 selector1 (propiedad:valor; propiedad2:valor; etc)
 selector2 (lo mismo que arriba. la idea es que estas propiedades formen parte de la misma "regla" osea el selector)
 selector3 y así sucesivamente-->*/
@@ -13,7 +13,7 @@ h4 {color: rgb(155, 27, 27);}
 
 main {background-color:rgb(248, 234, 42); color:rgb(93, 27, 155);}
 div {background-color: rgb(206, 82, 82); color:green;}
-
+article {background-color:rgb(14, 138, 78); color:purple;}
 
 /* selector grupal: varios selectores separados por una coma, que tienen la misma propiedad con el mismo valor. ej:*/
 ol, ul {color: rgb(0, 0, 0);}
@@ -80,9 +80,10 @@ Hay muchos valores, pero nosotros vamos a usar "px" y "%"
 p {width: 50%} /*50% del ancho del elemento padre, en este caso body
 valor predeterminado: auto. significa que width flucye con el contenido. ES MUY UTILIZADO!*/
 p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el del elemento padre.*/
+img {width: 30%;} /*50% del ancho del elemento padre, en este caso body.*/
 
 /*height: igual que width, pero para la altura. si no se especifica, el alto es el del elemento padre.*/
-
+img: {height: auto;} /*De esta manera no se va a deformar la imagen si le cambio el width, y va a tener un high proporcional .*/
 
 
 
@@ -106,8 +107,15 @@ text-shadow: agrega una sombra al texto.
 text-align:justify-all: hace que todo el renglón sea ocupado. no afecta la última línea. igual no sirve.
 text-align-last: igual q el de arriba, pero mejor. ademas incluye tambien la ultima línea*/
 
+/*Border: agrega un borde a cualquier elemento.
+border-style: tipo de borde. Valores posibles: none, solid, dotted, dashed, double, groove, ridge, inset, outset.
+border-width: ancho del borde. Valores posibles: thin, medium, thick, o medidas de longitud (px, em, rem, etc).
+border-color: color del borde. Valores posibles: cualquier color válido en CSS (nombre, hexadecimal, rgb, rgba, hsl, hsla).
+*/
 
+img {border: 7px dashed rgb(255, 0, 0); border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,0.5);}
+img {border-left-color: yellow;}
+header {border: 2px solid black;} /*en vez de poner todos los bordes por separado, se puede poner todo junto.*/
+/*border-radius: redondea las esquinas del borde. Valores posibles: px, em, rem, %, etc.*/
 
-
-
-
+form {width: 100px;height:200px;border:purple;margin:auto;background-color:aquamarine}
