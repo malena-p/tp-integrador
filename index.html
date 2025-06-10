@@ -1,4 +1,3 @@
-!
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,16 +24,10 @@
 <a href="#vinculos">Vínculos</a><br>
 <a href="#arriba">Arriba</a><br>
 <a href="#imagenes">Imágenes</a><br>
- 
-    <header id="elementos">
-<h2>"Elemento header":</h2>
-<p>Está muy grande porque lo agrandé desde css practicando el font-size. <br>
-    Es un "contenedor" (que no entiendo bien qué significa pero vamos viendo) Significa que lo usamos para poner partes de nuestro código y después le aplicamos variables desde css por ej, solo a esta parte (eso entendí).
-     Se supone que es el encabezado. Sería el contenido introductorio y se puede usar las veces que querramos. 
-     ej: notas de los diarios, tienen muchos headers. Puede anidar cualquier elemento, pero no puede anidar contenedores como otros headers o footers.</p>
+<a href="#formulario">Formularios</a><br>
+<a href="#servidores">Servidores</a>
 
-    
-    
+<header>
     <nav>  
 <h3>elemento nav:</h3>
 <p>por alguna razón, suele estar anidado en el elemento header, aunque también puede estar en main o en otros lugares. En footer se puede usar aunque no es lo recomendado. <br> <b>Se usa para hacer listas de links o barras de navegación</b>. es decir, deben contener links y elementos que nos permitan navegar, que sean <i>muy importantes.</i> Los links poco importantes deben estar en otro lugar. <br> Cuando sepa cómo cargas imágenes, te muestro un ejemplo. Pero ahora lo describo: sería por ej el lugar donde escribís tu búsqueda de google o de oras plataformas donde está la lupa. Eso interpreto. Ej de nav en el footer: acceso a las distintas rrss de una web. Otro ej: cada vez que seleccionás algo que te lleva a otro link diferente!</p>
@@ -78,7 +71,7 @@ Vínculos comunes
 <a href="https://github.com/emigallo-edu/digitalers"target="blank">github del profe</a><br>
 <a href="https://github.com/malena-p"target="blank"> mi github</a> <br>
 <a href="https://alumni.education/course/DIGI04/81024"target="blank">alumni</a><br>
-
+<a href="https://www.hostinger.com/ar/especial/000webhost"target="blank">000webhost (Para obtener un dominio gratis)</a><br>
 
 <p>El valor predeterminado de "target" es: <strong>self. </strong>De esta manera, los vínculos se van a abrir en la misma pestaña que estamos. Pero si agregamos "blank", se abren en una pestaña nueva! Ej:</p>
 <a href="https://nic.ar/" target="blank"> este era para crear dominios argentinos.</a>
@@ -105,11 +98,10 @@ Para crear el ancla, tengo que escribir el elemento "a" con el atributo id. Ej: 
 <p>Sirve para que el usuario te mande un mail. Vos cargás el mail al que querés que te escriban, y cuando el usuario apreta, se abre la página del correo con el mail que cargamos en el "to". <br>
 Para usarlo: generamos un párrafo y dentro de él, generamos el vínculo href= "mailto:correo al que queremos dirigir. ej:</p><br>
 <p><a href="mailto: malena.portilla9@gmail.com" > querés mandarle un mail a Malena Portilla? Hacé click acá rey/na. </a>  </p>
+</nav> </header>
 
-</nav>
 
- </header>
-
+ <a id="elementos">
  <main> <h4>elemento "main"</h4>
     Se supone que está lo que sería el contenido <i>más importante</i>, aunque tampoco estaría entendiendo a qué se refiere. También puede reutilizarse, aunque no suele hacerse ya que como dije, acá va el contenido <b>más</b> importante entonces para qué lo usarías 2 veces? es como que tu novio tenga otra novia.
     <p>Entonces vamos a poner la parte de los elementos básicos acá, porque es muy importante.</p>
@@ -136,9 +128,17 @@ Para usarlo: generamos un párrafo y dentro de él, generamos el vínculo href= 
  </main>
 
  <div>
-    <h3>Elementos de estructura</h3>
-    <p>Estos elementos son los que nos permiten estructurar el contenido de la página. Son los que le dan sentido a la información que estamos mostrando.</p>
+    <h2>Elementos de estructura</h2>
+    <p>Está muy grande porque lo agrandé desde css practicando el font-size. <br>
+        Estos elementos son los que nos permiten estructurar el contenido de la página. Son los que le dan sentido a la información que estamos mostrando.</p>
  
+<h3>"Elemento header":</h3>
+<p>
+    Es un "contenedor" (que no entiendo bien qué significa pero vamos viendo) Significa que lo usamos para poner partes de nuestro código y después le aplicamos variables desde css por ej, solo a esta parte (eso entendí).
+     Se supone que es el encabezado. Sería el contenido introductorio y se puede usar las veces que querramos. 
+     ej: notas de los diarios, tienen muchos headers. Puede anidar cualquier elemento, pero no puede anidar contenedores como otros headers o footers.</p>
+
+
     <h3>Elementos "section" y "article"</h3>
  <p>Entiendo que de alguna manera están relacionados. No me quedan claras sus funciones,
      pero parciera que la diferencia fundamental es que section necesita toda la interfaz, 
@@ -340,7 +340,7 @@ text-align-last: igual q el de arriba, pero mejor. ademas incluye tambien la ult
 </ul>
 </p>
 
-<ol
+
 
 
 
@@ -361,7 +361,7 @@ Atributo: son 2: <lo>
 <img src="https://images.unsplash.com/photo-1743535363334-2841caa6130e?q=80&w=2296&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="foto de un árbol con florcitas"> <p><--Ruta absoluta: el link de la imagen, sin descargar.</p>
 
 <h4>propiedad width:</h4>
-<p>OLO APLICABLE A ELEMENTOS DE BLOQUE, NO A LOS INLINE ej: videos, imagenes.
+<p>SOLO APLICABLE A ELEMENTOS DE BLOQUE, NO A LOS INLINE ej: videos, imagenes.
 Hay muchos valores, pero nosotros vamos a usar "px" y "%"
 p {width: 50%} /*50% del ancho del elemento padre, en este caso body
 valor predeterminado: auto. significa que width flucye con el contenido. ES MUY UTILIZADO!
@@ -372,8 +372,8 @@ p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el de
 <p>igual que width, pero para la altura. si no se especifica, el alto es el del elemento padre.</p>
 
 <p>Ahora vamos a hacer que el usuario pueda dirigirse al link de unsplash para descargar la imagen. Para eso hay que anidarla en un vínculo. El valor que vamos a usar para el atributo "src" es el de el lugar al que queremos que llegue el usuario y de ahí copiamos el link.</p>
-<a href="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="blank" title="Link a la foto de estrellas" width="30%">
-<img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXNwYWNpb3xlbnwwfHwwfHx8MA%3D%3D" alt="foto de estrellas">
+<a href="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank" title="Link a la foto de estrellas">
+<img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXNwYWNpb3xlbnwwfHwwfHx8MA%3D%3D" alt="foto de estrellas" width="30%">
 </a>
 
 <h3>Formatos para trabajar con img:</h3>
@@ -391,9 +391,13 @@ p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el de
 
 <h3>Background: HAY QUE APRENDERLO!!!!</h3>
 
+<a href="#arriba">Arriba</a>
+<a id="formulario"></a>
 <h1>Formmularios</h1>
 <p>Los formularios son elementos que permiten al usuario enviar información a un servidor. Se utilizan para recopilar datos, como nombres, direcciones de correo electrónico, contraseñas, etc.</p>
-<p>El elemento principal es: <b>"form"</b>. Los atributos más importantes son: <b>"action"</b> y <b>"method"</b></p>
+<p>El elemento principal es: <b>"form"</b>. Los atributos más importantes son: <b>"action"</b> y <b>"method"</b>
+<br>Sus elementos se denominan: "de línea-bloque" porque se comportan como elementos de línea (se ubican uno seguido del otro en la interfaz) pero pueden adquirir características de bloque (como width y height). <br>
+Si queremos que los elementos estén uno arriba del otro, claramente podemos usar br, pero para no agregar tantos elementos extra, vamos a modificarlo desde CSS. Lo que vamos a hacer es que los elementos se comporten como bloques a traves del elemento "DISPLAY".</p>
 
 <h4> Atributo: method</h4>
 <p>Sus valores pueden ser: <ul>
@@ -410,8 +414,8 @@ p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el de
     <li>password: Lo que el usuario escribe aparece cifrado (con asteriscos o circulitos).</li>
     <li>submit: Botón para enviar el formulario.</li>
     <li>reset: Botón para reiniciar el formulario.</li>
-    <li>checkbox: Casilla de verificación.</li>
-    <li>radio: Botón de opción (radio button).</li>
+    <li>checkbox: Casilla de verificación.Son los cuadraditos que apretas con tilde.</li>
+    <li>radio: Botón de opción (radio button). ej: casado o soltero; femenino o masculino</li>
     <li>file: Campo para adjuntar archivos.</li>
 <p><b>Elemento: input</b>
 <p>Es el elemento más común para crear campos de formulario. Se utiliza junto con el atributo "type" para especificar el tipo de campo.</p><br>
@@ -427,21 +431,122 @@ No es necesario aclarar el valor de su type ya que por defecto se trata de un va
 <h4>Atributo: required</h4>
 <p>Indica que el campo es obligatorio y debe ser completado antes de enviar el formulario.</p>
 
-<h4>Atributo: pattern</h4>
+<h4>Elemento: label</h4>
+<p>Se utiliza para asociar un texto descriptivo a un campo de formulario. Es útil para mejorar la accesibilidad y la usabilidad.
+<br>Para que cuando haga click en la label, se active el campo de formulario asociado, hay que usar el atributo "for" en el label y el atributo "id" en el input. El valor del atributo "for" debe coincidir con el valor del atributo "id" del input.</p>
+El ejemplo está aplicado abajo en "nombre y apelllido"</p>
+
+
+
+
+<form action="codigo.php" method="post">
+   <label for="nombreyapellido">Nombre y apellido</label> <input id="nombreyapellido" type="text" placeholder="Nombre y apellido">
+    <br><label>Mail</label><input type="email" placeholder="info@dominio.com" >
+   
+   
+   <h4>Atributo: pattern</h4>
 <p>Entiendo que solo se usa para la password. Permit decidir qué tipo de caracteres van a ser aplicados (eso gd que hacen las páginas de decirte cómo tiene que ser tu contraseña).
     Para usarlo, hay que ingresar a la página: https://html5pattern.com/ , copiar el patrón que nos guste y pegarlo en el atributo "pattern" del input de tipo password.
+</p><br><label>Contraseña</label><input type="password" placeholder="Contraseña">
+   <br><label>Edad</label> <input type="number" placeholder="Edad" min="18" max="120" >
+     <br><label>Género</label><input type="radio" name="genero" value="femenino" > Femenino
+                     <input type="radio" name="genero" value="masculino" > Masculino
+      <br><label>Deportes que practicas</label>
+      <input type="checkbox" name="deportes" value="futbol"> Fútbol
+      <input type="checkbox" name="deportes" value="basket"> Basket
+      <input type="checkbox" name="deportes" value="natacion"> Natación
+
+    <br><label>Acepta términos y condiciones?</label><input type="checkbox" name="terminos" value="acepto"> Acepto
+                                                <input type="checkbox" name="terminos" value="noacepto" checked> No acepto
+   
+                                                
+     <h4>Elemento: select</h4>
+<p>Se utiliza para crear un menú desplegable. Se usa junto con el elemento "option" para definir las opciones disponibles.
+</p>
+                                           
+   <br> <label>Elegí tu país:</label>
+   <select name="paises">
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="paraguay">Paraguay</option>
+        <option value="bolivia">Bolivia</option>
+        <option value="peru">Perú</option>
+ </select> <p><--Va a apareccer por defecto el que puse primero en la lista (en este caso: Argetina) Para cambiar esto, se usa el atributo "Selected" en la opción que queremos que sea predeterminada.
+           <br> Si agregamos el atributo "multiple" permitimos al usuario seleccionar más de una opción, y el menú desplegable se transforma en una <b> LISTA</b></p>                                  
+<h4>Campo: adjuntar</h4>
+<p>A través del input: <b>FILE</b></p>
+    <br><label>Adjuntar archivo</label> <input type="file" name="archivo" accept=".jpg, .png, .gif, .pdf">
+    <p><--El atributo "accept" permite especificar qué tipos de archivos se pueden adjuntar. En este caso, solo se permiten imágenes y archivos PDF.</p>
+
+    <h4>Campo de texto:</h4>
+    <p>A través del elemento "textarea". Este elemento permite al usuario ingresar varias líneas de texto.
+        Atributo cols: Ancho del campo de texto usando como medida: caracteres.<br> 
+        Atributo rows: Alto del campo de texto, usando como medida: líneas de texto.<br>
+        Las medidas que utilizan son lo que los deiferencian de width y height, qe utilizan px, % u otras unidades. Además, en este caso están siendo ignoradas las medidas que puse abajo ya que CSS SIEMPRE TIENE PRIORIDAD (y en este caso tambiénlo cambié desde CSS).<br>
+        Ese es el valor que vos definís, pero el usuario puede modificarlo desde la interfaz por defecto.
+    </p>
+    <textarea name="Acá podés escribir todo lo q quieras" cols="30" rows="10" placeholder="Escribí lo que quieras"></textarea>
+    <h4>Elemento: button</h4>
+    <p>Podés poner botones en donde quieras!!!</p>
+    <button type="button" onclick="alert('Hola, soy un botón! generado por IA obviamente')">Botón generado por mi compañero Copilot</button>
+    <button type="button" onclick="alert('Wow admiro tu valor, ojalá lo uses para el bien')">Acá hay otro botón. Si te animás apretalo</button>
+
+
+
+
+    <h4>Botón de envío</h4>
+    <p>Para enviar el formulario, se utiliza el valor "submit".</p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+
+<p>Otra manera de envir el forulario: con el elemento "button"</p>
+<button type="submit" value="Enviar" onclick="alert('Formulario enviado!!!! muy bien segu´así muchos éxitos en tu vida!!! ')">Enviar x2</button>
+
+<h3>Validación de los datos</h3>
+<p>Para asegurarse de que el usuario complete utilizando la información correcta.</p>
+<ul>Atributos
+ <li>required: Si no lo completas, no se envia el formulario y me aparece un cartelito de que ese campo es requerido. </li>
+<li>pattern </li>
+<li>min</li>
+<li>max </li>
+<li>maxlength </li>
+<li>minlength</li>
+<li>step</li>
+<li>type: Si no corresponde con el que el usuario ingresó, también salta error.</li>
+</ul>
+
+
+<label>Campo obligatorio:
+<input type="text" required>
+<span>*</span>
+</label>
+<button>Enviar</button></label>
+</form>
+
+
+<a id="servidores"></a>
+<h1>Servidores:</h1>
+<p>Un servidor es una computadora que almacena y gestiona recursos, como archivos, bases de datos y aplicaciones, y los pone a disposición de otros dispositivos a través de una red. Los servidores pueden ser físicos o virtuales y se utilizan para alojar sitios web, aplicaciones, servicios de correo electrónico, bases de datos y mucho más.</p>
+<p>Los servidores funcionan como intermediarios entre los clientes (dispositivos que solicitan recursos) y los recursos que se almacenan en ellos. Cuando un cliente solicita un recurso, el servidor procesa la solicitud y envía la respuesta correspondiente.
+    Osea que para que funcione, el servidor tiene que estar todo el tiempo online.
+</p>
+<h4>FTP: File Transfer Protocol</h4>
+<p>Formato de protocolo que permite subir y bajar archivos del servidor.
+    Para usarlo necesitamos un programa FPT. En este caso: FileZilla
 </p>
 
-<form action="codigo.php" method="post">
-    <input type="text" placeholder="Nombre y apellido" required>
-    <input type="email" placeholder="info@dominio.com" required>
-   <input type="password" placeholder="Contraseña" required>
-  
-    
 
 
 
-</form>
+
+
+
+
+
+
+
+
 
 
 <br><a href="#arriba">Arriba</a>
