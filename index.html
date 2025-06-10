@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hello</title>
 
-    <!--CSS: implementación interna 
-    selector{propiedad: valor;} <br> ej:  !-->
-
-<style>
+    
+<style>    /*CSS: implementación interna 
+    selector{propiedad: valor;} <br> ej:  */
     h3 {background-color: black; color: lightblue;}
+
 </style>
 
-<!--CSS: implementación externa. La recomendada! !-->
 
-<link rel="stylesheet" href="css/estilos.css">
+
+<link rel="stylesheet" href="css/estilos.css">    <!--CSS: implementación externa. La recomendada! !-->
 
 </head>
 <body >
+    <a id="arriba"></a> 
+    <a href="#elementos">Elementos</a><br>
+    <a href="#css">CSS</a><br>
+<a href="#vinculos">Vínculos</a><br>
+<a href="#arriba">Arriba</a><br>
+<a href="#imagenes">Imágenes</a><br>
  
-    <header id="elementos"><a href="#arriba">Arriba</a>
+    <header id="elementos">
 <h2>"Elemento header":</h2>
 <p>Está muy grande porque lo agrandé desde css practicando el font-size. <br>
     Es un "contenedor" (que no entiendo bien qué significa pero vamos viendo) Significa que lo usamos para poner partes de nuestro código y después le aplicamos variables desde css por ej, solo a esta parte (eso entendí).
@@ -29,7 +35,7 @@
 
     
     
-    <nav>  <a id="arriba"></a> 
+    <nav>  
 <h3>elemento nav:</h3>
 <p>por alguna razón, suele estar anidado en el elemento header, aunque también puede estar en main o en otros lugares. En footer se puede usar aunque no es lo recomendado. <br> <b>Se usa para hacer listas de links o barras de navegación</b>. es decir, deben contener links y elementos que nos permitan navegar, que sean <i>muy importantes.</i> Los links poco importantes deben estar en otro lugar. <br> Cuando sepa cómo cargas imágenes, te muestro un ejemplo. Pero ahora lo describo: sería por ej el lugar donde escribís tu búsqueda de google o de oras plataformas donde está la lupa. Eso interpreto. Ej de nav en el footer: acceso a las distintas rrss de una web. Otro ej: cada vez que seleccionás algo que te lleva a otro link diferente!</p>
  <p>Entonces acá vamos a poner la parte de vínculos</p>
@@ -83,13 +89,11 @@ Vínculos comunes
 <h4>Variante de vínculo: Ancla</h4>
 <p>Sirve para que selecciones el lugar de la página al que querés ir. Osea: viste en wikipedia? que al principio te dice los títulos y vos apretás y te lleva al espacio donde está lo que vos querés ver.<br>
 Para usarlo: el valor de href es: # + un nombre que yo le ponga. ej: </p>
-<a href="#elementos">Elementos</a><br>
+<pre><a href="#elementos">Elementos</a><br></pre>
 <p>El nombre que le puse al ancla es "elementos". Entonces, cuando hago click en el link, me lleva a la parte de la página donde está el ancla. <br>
 Para crear el ancla, tengo que escribir el elemento "a" con el atributo id. Ej: NO PUEDO MOSTRAR EL EJ PORQUE EL SITIO SE CONFUNDE. ASÍ QUE MIRALO DONDE VA <br>
 <p>El id es el nombre que le puse al ancla. Entonces, cuando hago click en el link, me lleva a la parte de la página donde está el ancla. <br>
-<a href="#css">CSS</a><br>
-<a href="#vinculos">Vínculos</a><br>
-<a href="#arriba">Arriba</a>
+<p>Voy a ponerlos arriba para tenerlos más a mano en la interfaz :)</p>
 <p>La variante Ancla sirve para llamar cualquier archivos que <strong> tenga el id disponible</strong>. Es decir, que puede llevarte a  un lugar de esa misma página, o a otro sitio dentro de tu mismo proyecto. por ej: voy a llamar a El otro archivo.</p>
 
 <a href="El otro archivo.html#ejercicio1">Ejercicio 1</a><br>
@@ -103,12 +107,6 @@ Para usarlo: generamos un párrafo y dentro de él, generamos el vínculo href= 
 <p><a href="mailto: malena.portilla9@gmail.com" > querés mandarle un mail a Malena Portilla? Hacé click acá rey/na. </a>  </p>
 
 </nav>
-
-
-
-
-
-
 
  </header>
 
@@ -176,7 +174,7 @@ Es un omplemento de html que sirve para cambiar el aspecto (display/layout) de l
 
 
 <h4 style="color: crimson; background-color: cadetblue;">en línea</h4> 
-<p style="color: crimson; background-color: cadetblue;" >Trabajar dentro del elemento a traves de un atributo llamado: <b>style.</b> No entiendo la diferencia entre interna y en línea, para mí son lo mismo.<br>la diferencia es que en línea es de esta manera, mientras que interna es a traves del atributo "style" y se hace en el encabezado. El ejemplo está puesto en el encabezado de este código!
+<p style="color: crimson; background-color: cadetblue;" >Trabajar dentro del elemento a traves de un atributo llamado: <b>style.</b>
 ej: fijate como estoy cambiando los atributos de esta etiqueta.<br> No es la manera recomendada ya que da paja tener que ir siempre al código y encontrar la etiqueta específica donde están esos datos. <br> De todas maneras igual se usan, y el ejemplo que dio la chica es en "newsletters" pero nidea.</p>
 
 <h4>Externa: es la manera recomendada</h4>
@@ -187,7 +185,9 @@ selector2 (lo mismo que arriba. la idea es que estas propiedades formen parte de
 selector3 y así sucesivamente</p>
 
 <h4>Interna</h4>
-<p>Se usa en el encabezado</p>
+<p>Se usa en el encabezado.
+ la diferencia con en línea es que para hacerlo inline es a través del <b>ATRIBUTO STYLE</b> mientras que interna es a traves del <b>BLOQUE STYLE.</b> El ejemplo está puesto en el encabezado de este código!
+</p>
 
 <!--selector{propiedad: valor;} <br>!-->
 <h3>Selectores:</h3>
@@ -252,13 +252,14 @@ a:hover {color: rgb(97, 66, 41);}
 a:active {color:aquamarine}
 </pre>
 
-<ph4>text-align: </ph4>
+<h4>text-align: </h4>
 <p>alinea el texto dentro de un elemento.<br>
 Valores posibles: left, right, center, justify (justifica el texto, osea lo alinea a ambos lados), start (alinea al inicio del texto) y end (alinea al final del texto).<br>
 div{text-align: center}
 </p>
 
-<p>text-decoration: valores posibles: underline (subraya), overline (le hace una linea arriba nqv), line-through (tacha), none,
+<h4>text-decoration: </h4>
+<p>valores posibles: underline (subraya), overline (le hace una linea arriba nqv), line-through (tacha), none,
 A los valores que dije arriba, se les puede agregar más valores: solid, dashed (subrayado en líneas discontínuas) dotted( subrayado puntitos) wavy(onda)
 h2 {text-decoration: overline wavy underline dashed}
 h4 {text-decoration: underline wavy;}
@@ -270,17 +271,6 @@ h4 {text-decoration: underline wavy;}
 valores posibles: uppercase(todo may), lowercase(todo min), capitalize (pone en mayus las iniciales), none.
 h3 {text-transform: uppercase;}
 </p>
-
-<h4>propiedad width:</h4>
-<p>OLO APLICABLE A ELEMENTOS DE BLOQUE, NO A LOS INLINE ej: videos, imagenes.
-Hay muchos valores, pero nosotros vamos a usar "px" y "%"
-p {width: 50%} /*50% del ancho del elemento padre, en este caso body
-valor predeterminado: auto. significa que width flucye con el contenido. ES MUY UTILIZADO!
-p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el del elemento padre.
-</p> 
-
-<h4>Propiedad height: </h4>
-<p>igual que width, pero para la altura. si no se especifica, el alto es el del elemento padre.</p>
 
 
 <h4>Propiedad margin:</h4>
@@ -310,16 +300,47 @@ siempre hay que importar la tipografía que queremos junto con sus característi
 <h4>text-shadow: </h4>
 <p>una sombra al texto.</p> 
 
-<h4>Eluneación del texto:</h4>
+<h4>Alineación del texto:</h4>
 <p>text-align:justify-all: hace que todo el renglón sea ocupado. no afecta la última línea. igual no sirve.
 text-align-last: igual q el de arriba, pero mejor. ademas incluye tambien la ultima línea</p>
 
+<h4>Propiedad Border:</h4>
+<p>Se puede agregar un borde a cualquier elemento. 
+    Valores posibles: none (sin borde), solid (borde sólido), dashed (borde discontinuo), dotted (borde punteado), double (borde doble), groove (borde con relieve), ridge (borde con relieve invertido), inset (borde interior) y outset (borde exterior).
+    También se puede especificar el grosor del borde (px o %), el color y el estilo.
+    Para implementarlo, primero hay que definir el estilo. osea: la propiedad "border-style", porque si no hacemos esto, no se van a ver los demás cambios que hagamos.
+    Luego, se puede especificar el grosor del borde con la propiedad "border-width" y el color con la propiedad "border-color". 
+    También se puede usar la propiedad "border" para definir el estilo, el grosor y el color en una sola línea.
+</p>
+
+<h4>Propiedades de listas:</h4>
+<p>Para modificar el estilo de las listas! ESTUDIAR ESTA PARTE!
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 
+    <ul>
+        <li><ul>propiedad: list-style<br>
+   <li>Valores para listas ordenadas: none, lower-alpha, lower-roman, upper-alpha, upper-roman.</li>
+       <li>Valores para listas desordenadas: none, disc, square, circle</li>
+    </ul></li>
+       <li>Propiedad: list-style-type: <br>
+    Valores posibles: disc, circle, square, decimal, decimal-leading-zero, lower-alpha, upper-alpha, lower-roman, upper-roman, none.
+    También se puede especificar el tipo de marcador que se quiere usar.</li>
+         <li>Propiedad: list-style-image: <br>
+    Permite usar una imagen como marcador de lista. Se especifica la URL de la imagen.</li>
+        <li>Propiedad: list-style-position: <br>
+    
+</ul>
+</p>
 
-<h3>Imágenes</h3>
-
-
+<ol
 
 
 
@@ -327,5 +348,102 @@ text-align-last: igual q el de arriba, pero mejor. ademas incluye tambien la ult
 
 
 <a href="#arriba">Arriba</a>
+<article><a id="imagenes"></a>
+<h1>Imágenes</h1>
+<p>Para agregar imágenes, usamos el elemento "img". Este elemento no tiene cierre, solo apertura.
+Atributo: son 2: <lo> 
+    <li>el atributo <b>"src"</b> que es la dirección de la imagen. </li>
+    <li>atributo <b>"alt" </b>que es una descripción de la imagen para los lectores de pantalla y para cuando la imagen no se carga.</p></li>
+</lo> 
+
+<img src="imagenes/foto 1.avif" alt="foto de un volcán"> <p><--Ruta relativa: con el nomnre que yo le puse luego de descargar.</p>
+
+<img src="https://images.unsplash.com/photo-1743535363334-2841caa6130e?q=80&w=2296&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="foto de un árbol con florcitas"> <p><--Ruta absoluta: el link de la imagen, sin descargar.</p>
+
+<h4>propiedad width:</h4>
+<p>OLO APLICABLE A ELEMENTOS DE BLOQUE, NO A LOS INLINE ej: videos, imagenes.
+Hay muchos valores, pero nosotros vamos a usar "px" y "%"
+p {width: 50%} /*50% del ancho del elemento padre, en este caso body
+valor predeterminado: auto. significa que width flucye con el contenido. ES MUY UTILIZADO!
+p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el del elemento padre.
+</p> 
+
+<h4>Propiedad height: </h4>
+<p>igual que width, pero para la altura. si no se especifica, el alto es el del elemento padre.</p>
+
+<p>Ahora vamos a hacer que el usuario pueda dirigirse al link de unsplash para descargar la imagen. Para eso hay que anidarla en un vínculo. El valor que vamos a usar para el atributo "src" es el de el lugar al que queremos que llegue el usuario y de ahí copiamos el link.</p>
+<a href="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="blank" title="Link a la foto de estrellas" width="30%">
+<img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXNwYWNpb3xlbnwwfHwwfHx8MA%3D%3D" alt="foto de estrellas">
+</a>
+
+<h3>Formatos para trabajar con img:</h3>
+<h4>.gif</h4>
+<p>Muy liviano pero muy mala calidad. Admite el "canal alpha"</p>
+<h4>.jpg</h4>
+<p> Excelente calidad aunque no admite el "canal alpha"</p>
+<h4>.png</h4>
+<p> Muy buena calidad, admite el "canal alpha" y es más liviano que el jpg. </p>
+<h4>.svg</h4>
+<p>No se deforma cuando modificás width o height.</p>
+<h4>.webp</h4>
+<h4>.avif</h4>
+</article>
+
+<h3>Background: HAY QUE APRENDERLO!!!!</h3>
+
+<h1>Formmularios</h1>
+<p>Los formularios son elementos que permiten al usuario enviar información a un servidor. Se utilizan para recopilar datos, como nombres, direcciones de correo electrónico, contraseñas, etc.</p>
+<p>El elemento principal es: <b>"form"</b>. Los atributos más importantes son: <b>"action"</b> y <b>"method"</b></p>
+
+<h4> Atributo: method</h4>
+<p>Sus valores pueden ser: <ul>
+    <li>get: Ideal para búsquedas. La info queda guardada como apéndice del url. Se considera no seguro. Además tiene límite de caracteres a ingresar.</il>
+    <li>post: Ideal para formularios de contacto o login. Es seguro, permite adjuntar archivos.</il>
+</ul>
+<h4>Atributo: Action</h4>
+<p>Es la URL a la que se enviará la información del formulario. Si no se especifica, se enviará a la misma página.</p>
+
+<h4>Atributo: type</h4>
+<p>Especifica el tipo de campo que se va a utilizar. Los valores más comunes son: <ul>
+    <li>text: Campo de texto simple.</li>
+    <li>email: Puede ingresar más de uno con el atributo "multiple". También puede trabajar con el atributo "pattern".</li>
+    <li>password: Lo que el usuario escribe aparece cifrado (con asteriscos o circulitos).</li>
+    <li>submit: Botón para enviar el formulario.</li>
+    <li>reset: Botón para reiniciar el formulario.</li>
+    <li>checkbox: Casilla de verificación.</li>
+    <li>radio: Botón de opción (radio button).</li>
+    <li>file: Campo para adjuntar archivos.</li>
+<p><b>Elemento: input</b>
+<p>Es el elemento más común para crear campos de formulario. Se utiliza junto con el atributo "type" para especificar el tipo de campo.</p><br>
+No es necesario aclarar el valor de su type ya que por defecto se trata de un valor de tipo texto (enlod emás si es necesario aclarar).</p>
+
+
+    <h4>Atributo: placeholder</h4>
+<p>Especifica un texto que se muestra en el campo antes de que el usuario ingrese información. Es útil para dar ejemplos o instrucciones.</p>
+
+<h4>Atributo: value</h4>
+<p>Es un valor predeterminado del campo. Es decir, completa el campo con caracteres válidos antes de que lo haga el usuario.</p>
+
+<h4>Atributo: required</h4>
+<p>Indica que el campo es obligatorio y debe ser completado antes de enviar el formulario.</p>
+
+<h4>Atributo: pattern</h4>
+<p>Entiendo que solo se usa para la password. Permit decidir qué tipo de caracteres van a ser aplicados (eso gd que hacen las páginas de decirte cómo tiene que ser tu contraseña).
+    Para usarlo, hay que ingresar a la página: https://html5pattern.com/ , copiar el patrón que nos guste y pegarlo en el atributo "pattern" del input de tipo password.
+</p>
+
+<form action="codigo.php" method="post">
+    <input type="text" placeholder="Nombre y apellido" required>
+    <input type="email" placeholder="info@dominio.com" required>
+   <input type="password" placeholder="Contraseña" required>
+  
+    
+
+
+
+</form>
+
+
+<br><a href="#arriba">Arriba</a>
 </body>
 </html>
