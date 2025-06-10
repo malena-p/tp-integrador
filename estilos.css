@@ -1,0 +1,113 @@
+/*  esto es así: para conectar esta cosa al resto de interfaces y que estas se vean afectadas por los cambios que se realicen acá, hay que vincularlas con ese link q ya viste. entoncas, la estructura para agregar cambios es la siguiente: 
+selector1 (propiedad:valor; propiedad2:valor; etc)
+selector2 (lo mismo que arriba. la idea es que estas propiedades formen parte de la misma "regla" osea el selector)
+selector3 y así sucesivamente-->*/
+
+/* Pero primero vamos a importar ipografía de fonts.google.com, para poder tener cualquier tipograafia que querrramos. Si no hacemos esto al principio de CSS, no funciona. */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+
+/*selector de etiqueta: afecta a todos los de su tipo. ej: los siguientes.*/
+nav {background-color: rgb(224, 197, 224)}
+h1 {color: rgb(108, 146, 158);}
+h4 {color: rgb(155, 27, 27);}
+
+main {background-color:rgb(248, 234, 42); color:rgb(93, 27, 155);}
+div {background-color: rgb(206, 82, 82); color:green;}
+
+
+/* selector grupal: varios selectores separados por una coma, que tienen la misma propiedad con el mismo valor. ej:*/
+ol, ul {color: rgb(0, 0, 0);}
+
+
+/*selector descendente: afecta a los elementos que están dentro de otro. 
+supongamos que tengo un b (negrita sin valor semántico extra) dentro de un párrafo, y yo quiero afectar solo ese b y no todos los del código*/
+/*escribimos el padre y luego el hijo, separados por un espacio.*/
+li b {color: green;}
+
+
+
+/*propiedad font size: 
+1em= medida base, es decir: 16 pixeles DE MANERA PREDETERMINADA. TAMBIEN SE PUEDE CAMBIAR EL VALOR DE EM.
+el h1 mide 2em (predeterminado)
+ahora vamos a cambiar eso: */
+h2 {font-size: 3em}
+p {font-size: 0.8em}
+/*para cambiar el valor de em: hay que hacerlo cambiando el font-sizze de body. Eso sería la "medida base"*/
+body {font-size: 20px;letter-spacing: 0.05em;word-spacing: 0.5em}
+
+
+
+/*para camiar la tipografía: la prdeterminada es Times new roman.
+También es heredable--> si yo cambio el body, todos los hijos van a heredar esa tipografía.ej:*/
+body {font-family:'Edu VIC WA NT Hand Pre', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+/*Font stack: significa que usa varios tipos de tipografía, por si alguno no está disponible en el navegador del usuario.
+si no se encuentra la primera, se usa la segunda, y así sucesivamente.*/
+
+
+/*si quiero cambiar solo un elemento, lo hago así:*/
+h1 {font-family: 'Courier New', Courier, monospace;}
+
+/* pseudo clases: modifican cómo se ven los links
+a:link -->cuando aun no lo visitamos
+a:visited
+a:hover --> cuando pasamos el mouse por encima del vínculo
+a:active --> al momento de hacerle click
+ En CSS, el orden correcto para los selectores de enlaces debe ser el que está arriba,
+porque si ponés a:visited después de a:hover, el color de a:visited (naranja) tiene prioridad y no deja ver el color de a:hover.*/
+
+
+a:link {text-decoration: none; color:blue}   
+a:visited {color:orangered}
+a:hover {color: rgb(97, 66, 41);}
+a:active {color:aquamarine}
+
+/*propiedades: 
+
+text-align: alinea el texto dentro de un elemento.*/
+div{text-align: center}
+
+/*text-decoration: valores posibles: underline (subraya), overline (le hace una linea arriba nqv), line-through (tacha), none,
+A los valores que dije arriba, se les puede agregar más valores: solid, dashed (subrayado en líneas discontínuas) dotted( subrayado puntitos) wavy(onda)*/
+h2 {text-decoration: overline wavy underline dashed}
+h4 {text-decoration: underline wavy;}
+
+/*text-transform: cambia el texto a mayúsculas, minúsculas, etc.
+valores posibles: uppercase(todo may), lowercase(todo min), capitalize (pone en mayus las iniciales), none.*/
+h3 {text-transform: uppercase;}
+
+/* propiedad width: SOLO APLICABLE A ELEMENTOS DE BLOQUE, NO A LOS INLINE ej: videos, imagenes.
+Hay muchos valores, pero nosotros vamos a usar "px" y "%"
+p {width: 50%} /*50% del ancho del elemento padre, en este caso body
+valor predeterminado: auto. significa que width flucye con el contenido. ES MUY UTILIZADO!*/
+p {width: 800px;} /*100 pixeles de ancho. si no se especifica, el ancho es el del elemento padre.*/
+
+/*height: igual que width, pero para la altura. si no se especifica, el alto es el del elemento padre.*/
+
+
+
+
+/*margin: margen, espacio entre el borde del elemento y los demás elementos. Osea: fija un espacio entre elementos.
+Sus valores pueden ser medidas de longitud (px, em, rem, etc) o porcentajes en base al ancho/alto. También pueden ser valores negativos, lo cual generaría superposición.
+
+/*padding: fija un espacio entre el contenido y el borde del elemento.
+
+/*box-sizing: Permite o no que el padding y el border se sumen al ancho y alto del elemento.
+
+/*fond-weight: grosor de la fuente. Valores posibles: normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900.
+Para poder usarlo hay que importar ese grosor específico desde Google Fonts, o sea, si no lo importamos, no va a funcionar.
+/*font-style: estilo de la fuente. Valores posibles: normal, italic, oblique.
+siempre hay que importar la tipografía que queremos junto con sus características específicas que queremos. Para eso hay que fijarse en google fonts.
+*/
+
+
+
+/*text-indent: sangría en el primer renglón del párrafo.
+text-shadow: agrega una sombra al texto.
+text-align:justify-all: hace que todo el renglón sea ocupado. no afecta la última línea. igual no sirve.
+text-align-last: igual q el de arriba, pero mejor. ademas incluye tambien la ultima línea*/
+
+
+
+
+
+
